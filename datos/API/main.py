@@ -3,7 +3,11 @@ from pydantic import BaseModel
 from typing import List
 import httpx
 
-#IMPORTANTE: Para correr servidor usar uvicorn main:app --reload sobre la carpeta de API.
+#Dentro de este archivo se define el servidor para permitir la conexión con OSRM y generar solicitudes 
+# para poder obtener la distancia y el tiempo entre 2 puntos. 
+
+#IMPORTANTE: Para correr servidor usar uvicorn main:app --reload 
+# Se debe ejecutar ubicandose sobre la carpeta de API.
 app = FastAPI()
 
 class Coordinate(BaseModel):
