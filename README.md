@@ -10,7 +10,7 @@
 
 ## Pasos para correr el proyecto
 
-Revise que su ambiente de ejecución cuenta con los paquetes definidos dentro del archivo de requirements. Adicionalmente, para la ejecución correcta de los modelos se utilizo la licensia estudiantil de `Gurobi`, por lo que asegurese de tener una versión de esta activa al momento de correr el proyecto. 
+Revise que su ambiente de ejecución cuenta con los paquetes definidos dentro del archivo de requirements. Adicionalmente, para la ejecución correcta de los modelos se utilizo la licensia estudiantil de `Gurobi`, por lo que asegurese de tener una versión de esta activa al momento de correr el proyecto. Asimismo, para agilizar la ejecución de los modelos se utiliza el parámetro Threads de `Gurobi`. Está fijo a 4 threads, confirme que su máquina puede correr 4 threads simultáneos. De no ser posible, ponga el máximo de threads que puede operar su máquina. 
 
 ## Estructura del repositorio
 
@@ -28,5 +28,5 @@ En las carpetas Caso_Base, Caso2 y Caso3 se encuentran los archivos con los dato
 
 ### Modelos
 
-Dentro de la carpeta de modelos se encuentran 3 notebooks en donde se desarrolla la solución y se incluye el análisis y visualización de cada uno de los casos resueltos. Adicionalmente, en esta carpeta se incluyen los archivos de verificación para cada caso. 
+Dentro de la carpeta de modelos se encuentran 3 notebooks en donde se desarrolla la solución y se incluye el análisis y visualización de cada uno de los casos resueltos. Adicionalmente, en esta carpeta se incluyen los archivos de verificación para cada caso. Estos archivos de verificación aparecerán como .csv en la misma carpeta de `Modelos`.
 
